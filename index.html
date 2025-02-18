@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosturaTempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="titulo-container">
+            <h1 class="titulo">CosturaTempo</h1>
+            <img src="/img/sewing-machine-fashion-svgrepo-com.svg" alt="Máquina de costura">
+            <p class="subtitulo">Feito exclusivamente para a Angela Ferreira! </p>
+        </header>
+
+        <!-- Calendário interativo -->
+        <div class="calendario-container">
+            <h2>Calendário</h2>
+            <div id="calendar"></div>
+        </div>
+
+        <!-- Formulário para adicionar compromisso -->
+        <div class="compromisso-form-container">
+            <h2>Adicionar Compromisso</h2>
+            <img src="/img/thread-fashion-svgrepo-com.svg" alt="">
+            <form id="form-compromisso">
+                <label for="compromisso">Compromisso:</label>
+                <input type="text" id="compromisso" placeholder="Adicione um compromisso" required>
+                <label for="prioridade">Prioridade:</label>
+                <select id="prioridade">
+                    <option value="alta">Alta</option>
+                    <option value="media">Média</option>
+                    <option value="baixa">Baixa</option>
+                </select>
+                <button type="submit">Adicionar Compromisso</button>
+            </form>
+        </div>
+
+        <!-- Lista de compromissos do dia -->
+        <div class="compromissos-container">
+            <h2>Compromissos do dia:</h2>
+            <ul id="lista-compromissos"></ul>
+        </div>
+
+        <!-- Formulário para adicionar anotações -->
+        <!-- Lista de anotações -->
+        <div class="anotacoes">   
+            <form id="form-anotacoes">
+                <h2>Anotações importantes</h2>
+                <img src="img/notes-notepad-svgrepo-com.svg" alt="">
+                <input type="text" id="anotacoes" placeholder="Adicione aqui uma anotação">
+                <button type="submit">Adicionar</button>
+            </form>
+            <ul id="lista-anotacoes"></ul> <!-- Aqui é onde as anotações serão listadas -->
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
