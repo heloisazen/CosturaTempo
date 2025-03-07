@@ -1,11 +1,9 @@
-/* Reseta o estilo padrão */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo principal do site */
 body {
     font-size: 30px;
     font-family: Arial, sans-serif;
@@ -16,7 +14,6 @@ body {
     padding: 0;
 }
 
-/* Container principal */
 .container {
     width: 80%;
     max-width: 1200px;
@@ -24,7 +21,6 @@ body {
     padding: 20px;
 }
 
-/* Cabeçalho do site */
 .titulo-container {
     text-align: center;
     margin-bottom: 40px;
@@ -47,7 +43,6 @@ body {
     margin-top: 10px;
 }
 
-/* Estilo do calendário */
 .calendario-container {
     margin-bottom: 40px;  
 }
@@ -68,7 +63,6 @@ h2 {
     color: #3c3ed1;
 }
 
-/* Grid do calendário */
 .calendar-header {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -178,6 +172,23 @@ button:hover {
     background-color: #5a33e6;
 }
 
+.edit-button{
+    width: 10%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.delete-button {
+    background-color: #cf4646; 
+    width: 10%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.delete-button:hover {
+    background-color: #b94240; 
+}
+
 #prev-month, #next-month {
     width: 30%;
     margin-top: 10px;
@@ -227,12 +238,24 @@ button:hover {
 }
 
 
-@media (max-width: 1000px){
+@media (max-width: 950px){
     #prev-month, #next-month{
         width: 30%;
         margin-top: 10px;
         margin-bottom: 50px;
         margin-left: 60px;
+    }
+
+    .edit-button{
+        width: 20%;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
+    .delete-button { 
+        width: 20%;
+        margin-left: 50px;
+        margin-top: 20px;
     }
 }
 
@@ -281,6 +304,19 @@ button:hover {
         margin-top: 10px;
         margin-bottom: 50px;
         margin-left: 50px;
+    }
+
+    .edit-button{
+        width: 20%;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
+    .delete-button { 
+        width: 20%;
+        margin-left: 50px;
+        margin-top: 20px;
+        
     }
 
 }
